@@ -3,9 +3,8 @@ import { Command } from 'commander';
 
 const program = new Command();
 
-program
-  .description('Compares two configuration files and shows a difference.');
-
-
+program.description('Compares two configuration files and shows a difference.');
 program.version('0.0.1');
+program.option('-f, --format', '<type>');
+
 program.parse();
